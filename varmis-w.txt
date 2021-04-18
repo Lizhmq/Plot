@@ -1,0 +1,453 @@
+Model has a total of 124647170 trainable parameters
+Training/evaluation parameters Namespace(adam_epsilon=1e-08, block_size=512, cache_dir='', config_dir=None, data_dir='../great/', device=device(type='cuda', index=0), do_eval=False, do_lower_case=False, do_train=True, eval_all_checkpoints=False, evaluate_during_training=True, fp16=False, fp16_opt_level='O1', gpu_per_node=2, gradient_accumulation_steps=4, langs='JAVA', learning_rate=4e-05, load_name='pretrained', local_rank=0, log_file='varmis-512.log', logging_steps=100, max_grad_norm=1.0, max_steps=-1, mlm=True, mlm_probability=0.15, model_type='roberta', n_gpu=1, no_cuda=False, node_index=0, not_pretrain=False, num_train_epochs=2.0, output_dir='./save/varmis-512/', overwrite_cache=False, overwrite_output_dir=True, per_gpu_eval_batch_size=10, per_gpu_train_batch_size=8, pretrain_dir='../.code-bert-cache/codebert-base', save_steps=2000, save_total_limit=None, seed=2333, server_ip='', server_port='', start_epoch=0, start_step=0, tensorboard_dir=None, tokenizer_dir=None, warmup_steps=0, weight_decay=0.01)
+Creating features from dataset file at ../great/train.pkl
+Creating features from dataset file at ../great/train.pkl
+Model has a total of 124647170 trainable parameters
+Training/evaluation parameters Namespace(adam_epsilon=1e-08, block_size=512, cache_dir='', config_dir=None, data_dir='../great/', device=device(type='cuda', index=0), do_eval=False, do_lower_case=False, do_train=True, eval_all_checkpoints=False, evaluate_during_training=True, fp16=False, fp16_opt_level='O1', gpu_per_node=2, gradient_accumulation_steps=4, langs='JAVA', learning_rate=4e-05, load_name='pretrained', local_rank=0, log_file='varmis-512.log', logging_steps=100, max_grad_norm=1.0, max_steps=-1, mlm=True, mlm_probability=0.15, model_type='roberta', n_gpu=1, no_cuda=False, node_index=0, not_pretrain=False, num_train_epochs=2.0, output_dir='./save/varmis-512/', overwrite_cache=False, overwrite_output_dir=True, per_gpu_eval_batch_size=10, per_gpu_train_batch_size=8, pretrain_dir='../.code-bert-cache/codebert-base', save_steps=2000, save_total_limit=None, seed=2333, server_ip='', server_port='', start_epoch=0, start_step=0, tensorboard_dir=None, tokenizer_dir=None, warmup_steps=0, weight_decay=0.01)
+Loading features from cached file ./save/varmis-512/train_langs_JAVA_blocksize_512_wordsize_2_rank_0
+Loading features from cached file ./save/varmis-512/train_langs_JAVA_blocksize_512_wordsize_2_rank_1
+***** Running training *****
+  Num examples = 1645696
+  Num epoch = 2
+  Instantaneous batch size per GPU = 8
+  Total train batch size (w. parallel, distributed & accumulation) = 64
+  Gradient Accumulation steps = 4
+  Total optimization steps = 51428
+  steps: 100  ppl: 1.7082
+  steps: 200  ppl: 1.4478
+  steps: 300  ppl: 1.4103
+  steps: 400  ppl: 1.4024
+  steps: 500  ppl: 1.3472
+  steps: 600  ppl: 1.3272
+  steps: 700  ppl: 1.3201
+  steps: 800  ppl: 1.3219
+  steps: 900  ppl: 1.326
+  steps: 1000  ppl: 1.3016
+  steps: 1100  ppl: 1.3029
+  steps: 1200  ppl: 1.3066
+  steps: 1300  ppl: 1.3104
+  steps: 1400  ppl: 1.3304
+  steps: 1500  ppl: 1.2884
+  steps: 1600  ppl: 1.2778
+  steps: 1700  ppl: 1.2812
+  steps: 1800  ppl: 1.2813
+  steps: 1900  ppl: 1.2676
+  steps: 2000  ppl: 1.2922
+Rank 0, load 0
+Rank 0, load 10
+Rank 0, load 20
+Rank 0, load 30
+Rank 0, load 40
+Rank 0, load 50
+Rank 0, load 60
+Rank 0, load 70
+Rank 0, load 80
+Rank 0, load 90
+  accuracy = 0.8983
+Saving model checkpoint to ./save/varmis-512/checkpoint-2000-0.8983
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 2100  ppl: 1.2683
+  steps: 2200  ppl: 1.2731
+  steps: 2300  ppl: 1.2524
+  steps: 2400  ppl: 1.2696
+  steps: 2500  ppl: 1.2669
+  steps: 2600  ppl: 1.2832
+  steps: 2700  ppl: 1.2455
+  steps: 2800  ppl: 1.2581
+  steps: 2900  ppl: 1.2452
+  steps: 3000  ppl: 1.2649
+  steps: 3100  ppl: 1.252
+  steps: 3200  ppl: 1.2572
+  steps: 3300  ppl: 1.2506
+  steps: 3400  ppl: 1.234
+  steps: 3500  ppl: 1.249
+  steps: 3600  ppl: 1.2439
+  steps: 3700  ppl: 1.2436
+  steps: 3800  ppl: 1.2381
+  steps: 3900  ppl: 1.234
+  steps: 4000  ppl: 1.2533
+  accuracy = 0.9235
+Saving model checkpoint to ./save/varmis-512/checkpoint-4000-0.9235
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 4100  ppl: 1.2445
+  steps: 4200  ppl: 1.2459
+  steps: 4300  ppl: 1.2227
+  steps: 4400  ppl: 1.2294
+  steps: 4500  ppl: 1.2332
+  steps: 4600  ppl: 1.2403
+  steps: 4700  ppl: 1.2428
+  steps: 4800  ppl: 1.2129
+  steps: 4900  ppl: 1.2368
+  steps: 5000  ppl: 1.2372
+  steps: 5100  ppl: 1.213
+  steps: 5200  ppl: 1.228
+  steps: 5300  ppl: 1.2287
+  steps: 5400  ppl: 1.2165
+  steps: 5500  ppl: 1.2187
+  steps: 5600  ppl: 1.2193
+  steps: 5700  ppl: 1.2309
+  steps: 5800  ppl: 1.2323
+  steps: 5900  ppl: 1.2245
+  steps: 6000  ppl: 1.2155
+  accuracy = 0.9264
+Saving model checkpoint to ./save/varmis-512/checkpoint-6000-0.9264
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 6100  ppl: 1.2006
+  steps: 6200  ppl: 1.2286
+  steps: 6300  ppl: 1.2272
+  steps: 6400  ppl: 1.2263
+  steps: 6500  ppl: 1.1902
+  steps: 6600  ppl: 1.1978
+  steps: 6700  ppl: 1.2133
+  steps: 6800  ppl: 1.2186
+  steps: 6900  ppl: 1.2101
+  steps: 7000  ppl: 1.2297
+  steps: 7100  ppl: 1.227
+  steps: 7200  ppl: 1.2464
+  steps: 7300  ppl: 1.2092
+  steps: 7400  ppl: 1.2277
+  steps: 7500  ppl: 1.217
+  steps: 7600  ppl: 1.2049
+  steps: 7700  ppl: 1.2154
+  steps: 7800  ppl: 1.1999
+  steps: 7900  ppl: 1.2072
+  steps: 8000  ppl: 1.2104
+  accuracy = 0.9297
+Saving model checkpoint to ./save/varmis-512/checkpoint-8000-0.9297
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 8100  ppl: 1.2089
+  steps: 8200  ppl: 1.2083
+  steps: 8300  ppl: 1.2109
+  steps: 8400  ppl: 1.1768
+  steps: 8500  ppl: 1.211
+  steps: 8600  ppl: 1.1968
+  steps: 8700  ppl: 1.1953
+  steps: 8800  ppl: 1.2019
+  steps: 8900  ppl: 1.1956
+  steps: 9000  ppl: 1.2036
+  steps: 9100  ppl: 1.2172
+  steps: 9200  ppl: 1.2033
+  steps: 9300  ppl: 1.2058
+  steps: 9400  ppl: 1.1909
+  steps: 9500  ppl: 1.2152
+  steps: 9600  ppl: 1.2143
+  steps: 9700  ppl: 1.2175
+  steps: 9800  ppl: 1.1945
+  steps: 9900  ppl: 1.1964
+  steps: 10000  ppl: 1.1935
+  accuracy = 0.9341
+Saving model checkpoint to ./save/varmis-512/checkpoint-10000-0.9341
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 10100  ppl: 1.1755
+  steps: 10200  ppl: 1.1933
+  steps: 10300  ppl: 1.1918
+  steps: 10400  ppl: 1.2149
+  steps: 10500  ppl: 1.2089
+  steps: 10600  ppl: 1.1868
+  steps: 10700  ppl: 1.1729
+  steps: 10800  ppl: 1.2105
+  steps: 10900  ppl: 1.1857
+  steps: 11000  ppl: 1.1926
+  steps: 11100  ppl: 1.1834
+  steps: 11200  ppl: 1.1807
+  steps: 11300  ppl: 1.2025
+  steps: 11400  ppl: 1.2004
+  steps: 11500  ppl: 1.198
+  steps: 11600  ppl: 1.1888
+  steps: 11700  ppl: 1.1924
+  steps: 11800  ppl: 1.1745
+  steps: 11900  ppl: 1.2197
+  steps: 12000  ppl: 1.1743
+  accuracy = 0.9339
+Saving model checkpoint to ./save/varmis-512/checkpoint-12000-0.9339
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 12100  ppl: 1.1932
+  steps: 12200  ppl: 1.1819
+  steps: 12300  ppl: 1.2038
+  steps: 12400  ppl: 1.1794
+  steps: 12500  ppl: 1.1801
+  steps: 12600  ppl: 1.1692
+  steps: 12700  ppl: 1.1662
+  steps: 12800  ppl: 1.1844
+  steps: 12900  ppl: 1.1926
+  steps: 13000  ppl: 1.1746
+  steps: 13100  ppl: 1.1776
+  steps: 13200  ppl: 1.1847
+  steps: 13300  ppl: 1.2048
+  steps: 13400  ppl: 1.1879
+  steps: 13500  ppl: 1.1831
+  steps: 13600  ppl: 1.2086
+  steps: 13700  ppl: 1.1859
+  steps: 13800  ppl: 1.1727
+  steps: 13900  ppl: 1.1824
+  steps: 14000  ppl: 1.1833
+  accuracy = 0.9418
+Saving model checkpoint to ./save/varmis-512/checkpoint-14000-0.9418
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 14100  ppl: 1.1559
+  steps: 14200  ppl: 1.1774
+  steps: 14300  ppl: 1.1878
+  steps: 14400  ppl: 1.1903
+  steps: 14500  ppl: 1.1782
+  steps: 14600  ppl: 1.1776
+  steps: 14700  ppl: 1.1858
+  steps: 14800  ppl: 1.1855
+  steps: 14900  ppl: 1.2031
+  steps: 15000  ppl: 1.1767
+  steps: 15100  ppl: 1.1661
+  steps: 15200  ppl: 1.1753
+  steps: 15300  ppl: 1.1635
+  steps: 15400  ppl: 1.1795
+  steps: 15500  ppl: 1.1825
+  steps: 15600  ppl: 1.1784
+  steps: 15700  ppl: 1.1758
+  steps: 15800  ppl: 1.1615
+  steps: 15900  ppl: 1.1826
+  steps: 16000  ppl: 1.1727
+  accuracy = 0.9415
+Saving model checkpoint to ./save/varmis-512/checkpoint-16000-0.9415
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 16100  ppl: 1.1959
+  steps: 16200  ppl: 1.1948
+  steps: 16300  ppl: 1.1786
+  steps: 16400  ppl: 1.1674
+  steps: 16500  ppl: 1.1853
+  steps: 16600  ppl: 1.1796
+  steps: 16700  ppl: 1.1859
+  steps: 16800  ppl: 1.1663
+  steps: 16900  ppl: 1.1752
+  steps: 17000  ppl: 1.1449
+  steps: 17100  ppl: 1.1676
+  steps: 17200  ppl: 1.1613
+  steps: 17300  ppl: 1.1759
+  steps: 17400  ppl: 1.1522
+  steps: 17500  ppl: 1.1588
+  steps: 17600  ppl: 1.1868
+  steps: 17700  ppl: 1.1646
+  steps: 17800  ppl: 1.1842
+  steps: 17900  ppl: 1.1764
+  steps: 18000  ppl: 1.1836
+  accuracy = 0.9434
+Saving model checkpoint to ./save/varmis-512/checkpoint-18000-0.9434
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 18100  ppl: 1.1589
+  steps: 18200  ppl: 1.159
+  steps: 18300  ppl: 1.1678
+  steps: 18400  ppl: 1.144
+  steps: 18500  ppl: 1.144
+  steps: 18600  ppl: 1.1521
+  steps: 18700  ppl: 1.1606
+  steps: 18800  ppl: 1.1512
+  steps: 18900  ppl: 1.1762
+  steps: 19000  ppl: 1.154
+  steps: 19100  ppl: 1.1653
+  steps: 19200  ppl: 1.1528
+  steps: 19300  ppl: 1.1744
+  steps: 19400  ppl: 1.1674
+  steps: 19500  ppl: 1.1789
+  steps: 19600  ppl: 1.167
+  steps: 19700  ppl: 1.174
+  steps: 19800  ppl: 1.1609
+  steps: 19900  ppl: 1.1595
+  steps: 20000  ppl: 1.1505
+  accuracy = 0.9444
+Saving model checkpoint to ./save/varmis-512/checkpoint-20000-0.9444
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 20100  ppl: 1.1486
+  steps: 20200  ppl: 1.1631
+  steps: 20300  ppl: 1.1668
+  steps: 20400  ppl: 1.1494
+  steps: 20500  ppl: 1.1499
+  steps: 20600  ppl: 1.1647
+  steps: 20700  ppl: 1.1585
+  steps: 20800  ppl: 1.1543
+  steps: 20900  ppl: 1.1422
+  steps: 21000  ppl: 1.1602
+  steps: 21100  ppl: 1.1621
+  steps: 21200  ppl: 1.1634
+  steps: 21300  ppl: 1.1512
+  steps: 21400  ppl: 1.1625
+  steps: 21500  ppl: 1.1611
+  steps: 21600  ppl: 1.1459
+  steps: 21700  ppl: 1.154
+  steps: 21800  ppl: 1.1703
+  steps: 21900  ppl: 1.1355
+  steps: 22000  ppl: 1.1535
+  accuracy = 0.9467
+Saving model checkpoint to ./save/varmis-512/checkpoint-22000-0.9467
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 22100  ppl: 1.1545
+  steps: 22200  ppl: 1.1395
+  steps: 22300  ppl: 1.1563
+  steps: 22400  ppl: 1.1503
+  steps: 22500  ppl: 1.1376
+  steps: 22600  ppl: 1.1491
+  steps: 22700  ppl: 1.1507
+  steps: 22800  ppl: 1.147
+  steps: 22900  ppl: 1.1459
+  steps: 23000  ppl: 1.1365
+  steps: 23100  ppl: 1.1365
+  steps: 23200  ppl: 1.166
+  steps: 23300  ppl: 1.1473
+  steps: 23400  ppl: 1.1488
+  steps: 23500  ppl: 1.1539
+  steps: 23600  ppl: 1.1689
+  steps: 23700  ppl: 1.1511
+  steps: 23800  ppl: 1.1698
+  steps: 23900  ppl: 1.1465
+  steps: 24000  ppl: 1.1518
+  accuracy = 0.9491
+Saving model checkpoint to ./save/varmis-512/checkpoint-24000-0.9491
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 24100  ppl: 1.1547
+  steps: 24200  ppl: 1.1497
+  steps: 24300  ppl: 1.1448
+  steps: 24400  ppl: 1.1606
+  steps: 24500  ppl: 1.1496
+  steps: 24600  ppl: 1.1394
+  steps: 24700  ppl: 1.1431
+  steps: 24800  ppl: 1.1494
+  steps: 24900  ppl: 1.1225
+  steps: 25000  ppl: 1.1332
+  steps: 25100  ppl: 1.1456
+  steps: 25200  ppl: 1.1504
+  steps: 25300  ppl: 1.1409
+  steps: 25400  ppl: 1.1532
+  steps: 25500  ppl: 1.1552
+  steps: 25600  ppl: 1.1439
+  steps: 25700  ppl: 1.1576
+  steps: 25800  ppl: 1.1187
+  steps: 25900  ppl: 1.1321
+  steps: 26000  ppl: 1.1309
+  accuracy = 0.9487
+Saving model checkpoint to ./save/varmis-512/checkpoint-26000-0.9487
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 26100  ppl: 1.12
+  steps: 26200  ppl: 1.1328
+  steps: 26300  ppl: 1.1193
+  steps: 26400  ppl: 1.1245
+  steps: 26500  ppl: 1.1292
+  steps: 26600  ppl: 1.1207
+  steps: 26700  ppl: 1.108
+  steps: 26800  ppl: 1.1343
+  steps: 26900  ppl: 1.1337
+  steps: 27000  ppl: 1.1314
+  steps: 27100  ppl: 1.1116
+  steps: 27200  ppl: 1.1262
+  steps: 27300  ppl: 1.1252
+  steps: 27400  ppl: 1.1248
+  steps: 27500  ppl: 1.1323
+  steps: 27600  ppl: 1.1125
+  steps: 27700  ppl: 1.1341
+  steps: 27800  ppl: 1.1285
+  steps: 27900  ppl: 1.1145
+  steps: 28000  ppl: 1.1223
+  accuracy = 0.95
+Saving model checkpoint to ./save/varmis-512/checkpoint-28000-0.95
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 28100  ppl: 1.1149
+  steps: 28200  ppl: 1.133
+  steps: 28300  ppl: 1.1213
+  steps: 28400  ppl: 1.1251
+  steps: 28500  ppl: 1.1358
+  steps: 28600  ppl: 1.1235
+  steps: 28700  ppl: 1.1154
+  steps: 28800  ppl: 1.1225
+  steps: 28900  ppl: 1.1138
+  steps: 29000  ppl: 1.1207
+  steps: 29100  ppl: 1.1173
+  steps: 29200  ppl: 1.1168
+  steps: 29300  ppl: 1.1132
+  steps: 29400  ppl: 1.1124
+  steps: 29500  ppl: 1.1135
+  steps: 29600  ppl: 1.1186
+  steps: 29700  ppl: 1.1222
+  steps: 29800  ppl: 1.1362
+  steps: 29900  ppl: 1.1143
+  steps: 30000  ppl: 1.0932
+  accuracy = 0.9507
+Saving model checkpoint to ./save/varmis-512/checkpoint-30000-0.9507
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 30100  ppl: 1.1076
+  steps: 30200  ppl: 1.1137
+  steps: 30300  ppl: 1.1276
+  steps: 30400  ppl: 1.1137
+  steps: 30500  ppl: 1.1131
+  steps: 30600  ppl: 1.1167
+  steps: 30700  ppl: 1.1206
+  steps: 30800  ppl: 1.1211
+  steps: 30900  ppl: 1.1134
+  steps: 31000  ppl: 1.1221
+  steps: 31100  ppl: 1.1381
+  steps: 31200  ppl: 1.1101
+  steps: 31300  ppl: 1.1192
+  steps: 31400  ppl: 1.1163
+  steps: 31500  ppl: 1.1296
+  steps: 31600  ppl: 1.1048
+  steps: 31700  ppl: 1.1194
+  steps: 31800  ppl: 1.1107
+  steps: 31900  ppl: 1.1069
+  steps: 32000  ppl: 1.1268
+  accuracy = 0.9498
+Saving model checkpoint to ./save/varmis-512/checkpoint-32000-0.9498
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 32100  ppl: 1.1209
+  steps: 32200  ppl: 1.1214
+  steps: 32300  ppl: 1.1022
+  steps: 32400  ppl: 1.1147
+  steps: 32500  ppl: 1.1002
+  steps: 32600  ppl: 1.1243
+  steps: 32700  ppl: 1.1152
+  steps: 32800  ppl: 1.109
+  steps: 32900  ppl: 1.1179
+  steps: 33000  ppl: 1.1155
+  steps: 33100  ppl: 1.1321
+  steps: 33200  ppl: 1.1042
+  steps: 33300  ppl: 1.0967
+  steps: 33400  ppl: 1.1189
+  steps: 33500  ppl: 1.1105
+  steps: 33600  ppl: 1.0903
+  steps: 33700  ppl: 1.1153
+  steps: 33800  ppl: 1.1036
+  steps: 33900  ppl: 1.1053
+  steps: 34000  ppl: 1.1226
+  accuracy = 0.9497
+Saving model checkpoint to ./save/varmis-512/checkpoint-34000-0.9497
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 34100  ppl: 1.1021
+  steps: 34200  ppl: 1.1011
+  steps: 34300  ppl: 1.1058
+  steps: 34400  ppl: 1.1108
+  steps: 34500  ppl: 1.1148
+  steps: 34600  ppl: 1.1205
+  steps: 34700  ppl: 1.1043
+  steps: 34800  ppl: 1.1128
+  steps: 34900  ppl: 1.1123
+  steps: 35000  ppl: 1.1135
+  steps: 35100  ppl: 1.1075
+  steps: 35200  ppl: 1.1108
+  steps: 35300  ppl: 1.1027
+  steps: 35400  ppl: 1.1031
+  steps: 35500  ppl: 1.1081
+  steps: 35600  ppl: 1.1236
+  steps: 35700  ppl: 1.1089
+  steps: 35800  ppl: 1.1169
+  steps: 35900  ppl: 1.1284
+  steps: 36000  ppl: 1.0982
+  accuracy = 0.9514
+Saving model checkpoint to ./save/varmis-512/checkpoint-36000-0.9514
+Saving optimizer and scheduler states to ./save/varmis-512/checkpoint-last
+  steps: 36100  ppl: 1.1023
+  steps: 36200  ppl: 1.1106
+  steps: 36300  ppl: 1.1177
+  steps: 36400  ppl: 1.1001
+  steps: 36500  ppl: 1.108
+  steps: 36600  ppl: 1.1067
+  steps: 36700  ppl: 1.1144
+  steps: 36800  ppl: 1.1119
+  steps: 36900  ppl: 1.0961
+  steps: 37000  ppl: 1.1028
+  steps: 37100  ppl: 1.1134
+  steps: 37200  ppl: 1.1153
+  steps: 37300  ppl: 1.1009
+  steps: 37400  ppl: 1.1181
